@@ -1,0 +1,21 @@
+nav{
+    right: 0px;
+    position: absolute;
+    top:10px;
+    font-size: 30px;
+}
+header {
+    background-color: #312f2f;
+}
+h1 {
+    color: white;
+}
+p{
+    color: white;
+}
+hr{
+    background-color: red;
+}
+html {
+    background-color: gray;
+}
