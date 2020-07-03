@@ -19,31 +19,31 @@ echo ALTER ROLE $DBUSER SET timezone TO 'UTC'\;
 
 python manage.py collectstatic
 
-sudo rm /etc/nginx/sites-enabled/django_nginx_turtle_master.conf
-sudo rm /etc/nginx/sites-available/django_nginx_turtle_master.conf
-sudo ln -s $PWD/django_nginx.conf /etc/nginx/sites-available/django_nginx_turtle_master.conf
-sudo ln -s $PWD/django_nginx.conf /etc/nginx/sites-enabled/django_nginx_turtle_master.conf
-#sudo rm /etc/uwsgi/apps-enabled/django_uwsgi.ini
-#sudo ln -s $PWD/django_uwsgi.ini /etc/uwsgi/apps-enabled/
-sudo rm /etc/systemd/system/gunicorn_TurtleMaster.socket
-sudo ln -s $PWD/gunicorn_TurtleMaster.socket /etc/systemd/system/
-sudo rm /etc/systemd/system/gunicorn_TurtleMaster.service
-sudo ln -s $PWD/gunicorn_TurtleMaster.service /etc/systemd/system/
+sudo rm /etc/nginx/sites-enabled/django_nginx_lingyuanyan.conf
+sudo rm /etc/nginx/sites-available/django_nginx_lingyuanyan.conf
+sudo ln -s $PWD/django_nginx.conf /etc/nginx/sites-available/django_nginx_lingyuanyan.conf
+sudo ln -s $PWD/django_nginx.conf /etc/nginx/sites-enabled/django_nginx_lingyuanyan.conf
+#sudo rm /etc/uwsgi/apps-enabled/django_uwsgi_lingyuanyan.ini
+#sudo ln -s $PWD/django_uwsgi_lingyuanyan.ini /etc/uwsgi/apps-enabled/
+sudo rm /etc/systemd/system/gunicorn_lingyuanyan.socket
+sudo ln -s $PWD/gunicorn_lingyuanyan.socket /etc/systemd/system/
+sudo rm /etc/systemd/system/gunicorn_lingyuanyan.service
+sudo ln -s $PWD/gunicorn_lingyuanyan.service /etc/systemd/system/
 #sudo service uwsgi restart
 sudo systemctl daemon-reload
-sudo systemctl restart gunicorn_TurtleMaster.socket
-sudo systemctl enable gunicorn_TurtleMaster.socket
-sudo systemctl restart gunicorn_TurtleMaster.service
-sudo systemctl enable gunicorn_TurtleMaster.service
-sudo systemctl status gunicorn_TurtleMaster.socket
-sudo systemctl status gunicorn_TurtleMaster.service
-#sudo rm /etc/supervisor/conf.d/TurtleMaster.conf
-#sudo ln -s $PWD/supervisor.conf /etc/supervisor/conf.d/TurtleMaster.conf
+sudo systemctl restart gunicorn_lingyuanyan.socket
+sudo systemctl enable gunicorn_lingyuanyan.socket
+sudo systemctl restart gunicorn_lingyuanyan.service
+sudo systemctl enable gunicorn_lingyuanyan.service
+sudo systemctl status gunicorn_lingyuanyan.socket
+sudo systemctl status gunicorn_lingyuanyan.service
+#sudo rm /etc/supervisor/conf.d/lingyuanyan.conf
+#sudo ln -s $PWD/supervisor.conf /etc/supervisor/conf.d/lingyuanyan.conf
 #sudo supervisorctl reread
 #sudo supervisorctl update
 sudo service nginx restart
 
-echo pleas note nginx is configed to server traffic for 'covidhub.test' for this website
-echo consider add '127.0.0.1 covidhub.test' into your /etc/hosts
+echo pleas note nginx is configed to server traffic for 'lingyuanyan.test' for this website
+echo consider add '127.0.0.1 lingyuanyan.test' into your /etc/hosts
 echo and edit /etc/nsswitch.conf to 'hosts: files mdns4_minimal [NOTFOUND=return] dns'
 echo so you can use the domain name to test
