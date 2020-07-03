@@ -6,8 +6,8 @@ After=network.target
 [Service]
 User=wwwadmin
 Group=wwwadmin
-WorkingDirectory=/home/wwwadmin/lingyuanyan
-ExecStart=/home/wwwadmin/lingyuanyan/venv_t/bin/gunicorn --access-logfile - --workers 3 --bind unix:/home/wwwadmin/lingyuanyan/lingyuanyan.sock lingyuanyan.wsgi:application
+WorkingDirectory=/home/wwwadmin/LingyuanYan
+ExecStart=/home/wwwadmin/LingyuanYan/venv_t/bin/gunicorn --access-logfile - --workers 3 --bind unix:/home/wwwadmin/LingyuanYan/lingyuanyan.sock lingyuanyan.wsgi:application
 
 [Install]
 WantedBy=multi-user.target
