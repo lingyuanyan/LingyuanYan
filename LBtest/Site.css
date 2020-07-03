@@ -1,0 +1,109 @@
+nav{
+    right: 0px;
+    position: absolute;
+    top:10px;
+    font-size: 100%;
+}
+header {
+    background-color: #312f2f;
+    height: 65px;
+    left: 2px
+    right: 0%;
+}
+h1, h2{
+    color: white;
+    text-align: center;
+}
+.gallery{
+  border: 1px solid black;
+  margin:  5px
+  padding: 0px;
+}
+h3{
+    color: white;
+    font-size: 1px;
+    text-align: center;
+}
+p{
+    background-color: gray;
+}
+hr{
+    background-color: red;
+}
+html {
+    background-color: gray;
+}
+img{
+  background-color: gray;
+  margin-bottom: 5px
+  border: 1px solid black;
+  color: white
+  border: solid black 1px;
+}
+#container{
+}
+.carousels{
+  background-color: gray;
+  margin-top: -5vh;
+  width: 100%;
+  margin-bottom: -25vh;
+  color: white;
+  height: 50%;
+}
+
+summary{
+  color: white
+}
+#container:after{
+  content: "";
+  height: 25px;
+  display: block;
+  height: 25px;
+}
+#demo{
+  width: 100vw;
+}
+label{
+  color: white
+}
+footer{
+    background-color: #5d5d5d;
+    color: white;
+    width: 100%;
+    position: absolute;
+    border-top: 2px solid #9a1a1af5;
+    left: 0;
+    line-height: 25px;
+}
+.carousel-item{
+  width: 100vw;
+  height: 100vh;
+}
+p{
+  float:left;
+  color: white;
+}
+li{
+  color: white;
+}
+div{
+  background-color: gray;
+  margin: 0px;
+  display: inline-block;
+  text-align: center;
+}
+.left{
+  margin: 5%;
+
+}
+.test{
+  color: white;
+  border: solid white 3px;
+}
+ul {
+  display: inline-block;
+  text-align: left;
+}
+p{
+  text-align: center;
+}
