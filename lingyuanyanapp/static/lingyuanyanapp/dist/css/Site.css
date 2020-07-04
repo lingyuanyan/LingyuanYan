@@ -1,0 +1,104 @@
+nav{
+    right: 0px;
+    position: absolute;
+    top:10px;
+    font-size: 100%;
+}
+header {
+    background-color: #312f2f;
+    height: 65px;
+    left: 2px
+    right: 0%;
+}
+h1{
+    color: white;
+    text-align: center;
+}
+h2{
+    color: white;
+    text-align: center;
+        background-color: gray;
+}
+h3{
+    color: white;
+    font-size: 1px;
+    text-align: center;
+    background-color: gray;
+}
+p{
+    background-color: gray;
+    text-align: center;
+}
+hr{
+    background-color: red;
+}
+html {
+    background-color: gray;
+}
+section{
+  background-color: gray;
+}
+summary{
+  color: white
+}
+#container:after{
+  content: "";
+  height: 25px;
+  display: block;
+  height: 25px;
+}
+#content{
+  background-color: gray;
+}
+#demo{
+  width: 100vw;
+}
+label{
+  color: white
+}
+footer{
+    background-color: #5d5d5d;
+    color: white;
+    width: 100%;
+    position: absolute;
+    border-top: 2px solid #9a1a1af5;
+    left: 0;
+    line-height: 25px;
+}
+p{
+  float:left;
+  color: white;
+}
+li{
+  color: white;
+}
+div{
+  margin: 0px;
+  display: inline-block;
+  text-align: center;
+}
+ul {
+  display: inline-block;
+  text-align: left;
+}
+p{
+  text-align: center;
+}
+.carousel-item{
+  width: 100vw;
+  height: 100vh;
+}
+.carousels{
+  background-color: gray;
+  margin-top: -5vh;
+  width: 100%;
+  margin-bottom: -25vh;
+  color: white;
+  height: 50%;
+}
+.gallery{
+  margin:  0px;
+  color: white;
+  display: block;
+  padding: 0px;
+}
