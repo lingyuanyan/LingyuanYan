@@ -1,0 +1,14 @@
+[Unit]
+Description=Lingyuan Yan gunicorn daemon
+Requires=gunicorn_lingyuanyan.socket
+After=network.target
+
+[Service]
+User=wwwadmin
+Group=wwwadmin
+WorkingDirectory=/home/wwwadmin/LingyuanYan
+ExecStart=/home/wwwadmin/LingyuanYan/venv_t/bin/gunicorn --access-logfile - --workers 3 --bind unix:/home/wwwadmin/LingyuanYan/lingyuanyan.sock lingyuanyan.wsgi:application
+
+[Install]
+WantedBy=multi-user.target
+

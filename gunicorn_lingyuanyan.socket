@@ -1,0 +1,6 @@
+[Unit]
+Description=Lingyuan Yan socket
+[Socket]
+ListenStream= /home/wwwadmin/LingyuanYan/lingyuanyan.sock 
+[Install]
+WantedBy=sockets.target
